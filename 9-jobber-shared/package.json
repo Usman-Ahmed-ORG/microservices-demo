@@ -18,8 +18,8 @@
     "trailingComma": "es5"
   },
   "keywords": [],
-  "name": "",
-  "author": "",
+  "name": "@Usman-Ahmed-ORG/jobber-shared",
+  "author": "Usman Ahmed",
   "repository": {
     "type": "git",
     "url": ""
@@ -37,5 +37,16 @@
       "require": "./cjs/icons/index.js"
     }
   },
-  "types": "./src/index.d.ts"
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "express": "^5.1.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-typescript": "^7.27.1",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10"
+  }
 }

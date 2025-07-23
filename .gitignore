@@ -1,1 +1,4 @@
 /docker-volumes/*
+/9-jobber-shared/node_modules
+/9-jobber-shared/.git
+/9-jobber-shared/.gitignore

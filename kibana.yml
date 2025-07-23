@@ -1,0 +1,53 @@
+# ================== Kibana Basic Configuration ==================
+server.host: "0.0.0.0"
+server.port: 5601
+
+elasticsearch.hosts: ["http://elasticsearch_container:9200"]
+# elasticsearch.username: "kibana_system"
+# elasticsearch.password: "your_kibana_password"
+
+logging.level: info
+logging.dest: stdout
+
+# ================== X-Pack Features ==================
+
+# --------- Security (login, roles, etc.)
+xpack.security.enabled: true
+xpack.security.encryptionKey: "some-random-string-at-least-32-characters"
+
+# --------- Monitoring
+xpack.monitoring.enabled: true
+xpack.monitoring.kibana.collection.enabled: true
+
+# --------- Alerting
+xpack.alerting.enabled: true
+
+# --------- Reporting
+xpack.reporting.enabled: true
+xpack.reporting.encryptionKey: "another-long-random-string-at-least-32-characters"
+xpack.reporting.kibanaServer.hostname: "localhost"
+xpack.reporting.roles.enabled: false
+
+# --------- APM (Application Performance Monitoring)
+xpack.apm.enabled: true
+
+# --------- ML (Machine Learning)
+xpack.ml.enabled: true
+
+# --------- Spaces (multi-tenancy like feature)
+xpack.spaces.enabled: true
+
+# --------- Encrypted Saved Objects (used by alerts, reporting, etc.)
+xpack.encryptedSavedObjects.encryptionKey: "a-very-very-long-random-string-of-32+-chars"
+
+# --------- License Management
+xpack.license_management.enabled: true
+
+# --------- Snapshot & Restore UI
+xpack.snapshot_restore.enabled: true
+
+# --------- Uptime
+xpack.uptime.enabled: true
+
+# --------- Maps
+xpack.maps.enabled: true
